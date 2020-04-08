@@ -1,17 +1,65 @@
-header h1{
-    text-align: center;
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(36, 32, 32);
 }
 
 header nav ul{
     list-style: none;
-    position: relative;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+    align-items: center;
 }
 
 header nav ul li{
-    display: inline-block;
+    white-space: nowrap;
+    padding-right: 5%;
+}
+
+header nav h2{
+    color: white;
+    text-align: left;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(73, 72, 72);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+main h1{
     text-align: center;
-    padding-right: 1%;
+}
+main div{
+    display: flex;
+    /*align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;*/
+}
+
+main div article{
+    border: 1px #ccc solid;
+}
+
+#first-question{
+    flex: 1;
+}
+#second-question{
+    flex: 3;
+}
+#sidebar{
+    flex: 1;
 }

@@ -1,0 +1,17 @@
+header h1{
+    text-align: center;
+}
+
+header nav ul{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    display: inline-block;
+    text-align: center;
+    padding-right: 1%;
+}

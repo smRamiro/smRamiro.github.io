@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+h1,h2,h3,h4{
+
+    font-family: 'Lato', sans-serif;
+}
+
 *{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header nav{
@@ -18,7 +25,6 @@ header nav ul{
 
 header nav ul li{
     white-space: nowrap;
-    padding-right: 5%;
 }
 
 header nav h2{
@@ -42,12 +48,19 @@ a{
 main h1{
     text-align: center;
 }
-main div{
-    display: flex;
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5% 15%;
     /*align-items: flex-start;
     align-items: flex-end;
     align-items: center;
     align-items: stretch;*/
+}
+
+.questions-container{
+    display: grid;
+    gap: 5%;
 }
 
 main div article{
@@ -55,11 +68,19 @@ main div article{
 }
 
 #first-question{
-    flex: 1;
+    /*flex: 1;*/
 }
 #second-question{
-    flex: 3;
+    grid-column: 1;
+    /*flex: 3; /*Here im only using the first parameter of this attribute,
+    so basically im using flex-grow: 1*/
 }
 #sidebar{
-    flex: 1;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.sidebars-container, .questions-container{
+    text-align: justify;
 }

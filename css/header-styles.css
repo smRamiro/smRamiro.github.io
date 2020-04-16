@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+h1,h2,h3,h4{
+
+    font-family: 'Lato', sans-serif;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: rgb(36, 32, 32);
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "logo links";
+    background-color: rgb(36, 32, 32);
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+    align-items: center;
+    grid-area: links;
+}
+
+header nav ul li{
+    white-space: nowrap;
+}
+
+header nav h2{
+    color: white;
+    text-align: left;
+    grid-area: logo;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(73, 72, 72);
+}
+
+@media(max-width: 420px){
+    header nav{
+        flex-basis: auto;
+        font-size: 1vw;
+    }
+}

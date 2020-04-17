@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
+#question1{
+    background: url(../imgs/pagecolormodelling.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#question2{
+    background: url(../imgs/codescreen2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#question3{
+    background: url(../imgs/shortbook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body{
     background-color: rgb(112, 112, 112);
 }
@@ -44,24 +62,6 @@ h2, h3, h4{
     border: 1px white solid;
     text-align: center;
     color: white;
-}
-
-#question1{
-    background: url(../imgs/pagecolormodelling.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#question2{
-    background: url(../imgs/codescreen2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#question3{
-    background: url(../imgs/shortbook.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .text{

@@ -13,6 +13,12 @@ h1,h2,h3,h4{
     font-family: 'Roboto', sans-serif;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0;
+}
+
 main h1{
     text-align: center;
     font-size: 25px;
@@ -22,20 +28,61 @@ h2, h3, h4{
     font-size: 20px;
 }
 
-main .questions-container{
+.questions-container{
     display: grid;
     gap: 0 5%;
     grid-template-columns: repeat(3, 2fr);
     margin: 2%;
     white-space: normal;
+    justify-items: center;
+    max-width: 100%;
+}
+
+.questions{
+    width: 300px;
+    height: 300px;
+    border: 1px white solid;
+    text-align: center;
+    color: white;
+}
+
+#question1{
+    background: url(../imgs/pagecolormodelling.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#question2{
+    background: url(../imgs/codescreen2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#question3{
+    background: url(../imgs/shortbook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.753);
+    opacity: 0;
+    transition: .5s;
+}
+
+.text:hover{
+    opacity: 1;
 }
 
 main div article{
     border: 1px #ccc solid;
-}
-
-.questions-container{
-    text-align: justify;
 }
 
 body{
